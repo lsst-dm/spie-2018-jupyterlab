@@ -1,0 +1,4 @@
+---
+ignored:
+  # disable apt version pinning
+  - DL3008

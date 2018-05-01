@@ -1,0 +1,71 @@
+\documentclass[]{spie}  %>>> use for US letter paper
+%\documentclass[a4paper]{spie}  %>>> use this instead for A4 paper
+%\documentclass[nocompress]{spie}  %>>> to avoid compression of citations
+
+\renewcommand{\baselinestretch}{1.0} % Change to 1.65 for double spacing
+
+\def\procspie{Proc.\ SPIE} % Proceedings of the SPIE
+
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{We're all programmers now: the JupyterLab notebook environment of the LSST science platform}
+
+\author[a]{Frossie~Economou}
+\author[a]{Adam~Thornton}
+\author[a]{K.~Simon~Krughoff}
+\author[a]{Josh~Hoblitt}
+\author[a]{Angelo~Fausti}
+\author[b]{Gregory~P.~Dubois-Felsmann}
+\author[a]{Jonathan~Sick}
+\author[a]{Tim~Jenness}
+
+\affil[a]{LSST Project Office, 950 N.\ Cherry Avenue, Tucson, AZ 85719, USA}
+\affil[b]{IPAC, California Institute of Technology, MS 100-22, Pasadena, CA 91125, USA}
+
+\authorinfo{Further author information: (Send correspondence to T.J.)\\F.E.: E-mail: frossie@lsst.org}
+
+% Option to view page numbers
+\pagestyle{empty} % change to \pagestyle{plain} for page numbers
+\setcounter{page}{1} % Set start page numbering at e.g. 301
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+As part of the LSST Science Platform, we are developing a JupyterLab-based environment to enable free-form interactive data analysis that integrates with other parts of the LSST Science Platform such as Data Access APIs and the Science User Interface.
+This container-based architecture, deployed on top of Kubernetes, will allow users to interact with LSST data products and services using python code.
+It is also intended as an internal tool to allow the LSST Commissioning Team to perform verification of the LSST system prior to the release of this platform to the general scientific community.
+We will discuss the considerable opportunities (as well as some of the potential pitfalls) of using Jupyter notebooks as a programmatic interface to the LSST Data Facility capabilities.
+\end{abstract}
+
+% Include a list of keywords after the abstract
+\keywords{LSST, Kubernetes, \ldots}
+
+\section{Introduction}
+
+The Large Synoptic Survey Telescope (LSST)\cite{2008arXiv0805.2366I} \ldots
+The LSST Data Management System \cite{2015arXiv151207914J} will \ldots
+The LSST Science Platform (LSP) \cite{LSE-319} \ldots
+
+\section{LSST Science Platform: Notebook Aspect}
+
+\section{Why JupyterLab?}
+
+\section{Deployment}
+
+\section{Commissioning and Operational Usage}
+
+\section{Conclusion}
+
+\acknowledgments % equivalent to \section*{ACKNOWLEDGMENTS}
+
+This material is based upon work supported in part by the National Science Foundation through Cooperative Agreement 1258333 managed by the Association of Universities for Research in Astronomy (AURA), and the Department of Energy under Contract No.\ DE-AC02-76SF00515 with the SLAC National Accelerator Laboratory.
+Additional LSST funding comes from private donations, grants to universities, and in-kind support from LSSTC Institutional Members.
+
+% References
+\bibliography{spie-10707-16} % bibliography data
+\bibliographystyle{spiebib} % makes bibtex use spiebib.bst
+
+\end{document}
